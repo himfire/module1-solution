@@ -9,7 +9,8 @@ function LunchCheckController($scope){
 	$scope.check = function(){
 		var texta = $scope.item.split(', ').join(',');
 		var textb = texta.split(', ').join(',');
-		var len = textb.split(",");
+		var textc = textb.split(',,').join(',');
+		var len = textc.split(",");
 		$scope.food = len;
 		if(len.length == 0){
 			$scope.message =  "Empty";
